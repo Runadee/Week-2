@@ -15,17 +15,13 @@ public class Match {
         if (isCheck()) {
             while (this.fighter1.health > 0 && this.fighter2.health > 0) {
                 System.out.println("======= New Round =======");
-                if (Math.random() < 0.5){
+                if (Math.random() < 0.5) {
                     this.fighter2.health = this.fighter1.hit(this.fighter2);
                     if (isWin()) break;
                 } else {
                     this.fighter1.health = this.fighter2.hit(this.fighter1);
                     if (isWin()) break;
                 }
-
-
-
-
                 System.out.println("John health : " + this.fighter2.health);
                 System.out.println("Jack health : " + this.fighter1.health);
             }
@@ -49,6 +45,5 @@ public class Match {
         }
         return false;
     }
-
 
 }

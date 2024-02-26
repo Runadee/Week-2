@@ -43,7 +43,7 @@ public class Employee {
 
 
     void print() {
-
+        // Calculations requested from us
         double salaryTaxBonus = this.salary - tax() + bonus();
         double totalSalary = salaryTaxBonus + raiseSalary();
 
